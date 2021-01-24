@@ -1,0 +1,38 @@
+{
+  "name": "nanos",
+  "version": "1.0.0",
+  "description": "Nanos is based in Switzerland, and is hence required by laws to charge an additional VAT on the total price for any client from Switzerland - irrespective of what the client’s nationality is.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --require @babel/register server.js",
+    "start": "node --require @babel/register server.js",
+    "mig": "babel-node ./server/models/migrate.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/register": "^7.7.4",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "pg": "^7.14.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/czarjulius/Nanos.git"
+  },
+  "keywords": [],
+  "author": "Julius Ngwu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/czarjulius/Nanos/issues"
+  },
+  "homepage": "https://github.com/czarjulius/Nanos#readme"
+}
