@@ -3,6 +3,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import "dotenv/config";
+import router from "./server/routes/index";
 
 const app = express();
 
@@ -10,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.json());
-// app.use(router);
+app.use(router);
 
 app.get("/", (req, res) => {
   res.send(" Welcome To Nanos");
