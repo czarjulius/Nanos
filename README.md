@@ -26,7 +26,7 @@ To run tests for the server side
 - Input `http://localhost:9000/api/v1/client/1`
 
 - Output
-`
+```
 {
     "status": 200,
     "message": "Client fetched successfully",
@@ -38,7 +38,7 @@ To run tests for the server side
         "stripe_customer_id": "cus_IokscW9UPbH3xm"
     }
 }
-`
+```
 - 2. | Method | Description | Endpoints      |
      | ------ | ----------- | -------------- |
      | GET |Get a single campaign by Id |  /api/v1/campaign/:campaign_id|
@@ -46,7 +46,7 @@ To run tests for the server side
  - Input `http://localhost:9000/api/v1/campaign/1`
 
 - Output
-`{
+```{
     "status": 200,
     "message": "Campaign fetched successfully",
     "data": {
@@ -54,13 +54,13 @@ To run tests for the server side
         "name": "Campaign_one"
     }
 }
-`
+```
 - 3. | Method | Description | Endpoints      |
      | ------ | ----------- | -------------- |
      | GET |Fetch all the campaigns in the database | /api/v1/campaigns|
 
  - Output
- `{
+ ```{
     "status": 200,
     "message": "Campaign fetched successfully",
     "data": [
@@ -73,7 +73,7 @@ To run tests for the server side
         }
     ]
 }
- `
+ ```
 
  - 4. | Method | Description | Endpoints      |
       | ------ | ----------- | -------------- |
@@ -82,7 +82,7 @@ To run tests for the server side
   - Input `http://localhost:9000/api/v1/add_vat/1`
 
  - Output
- `{
+ ```{
     "status": 200,
     "message": "Customer VAT updated successfully",
     "data": {
@@ -101,7 +101,7 @@ To run tests for the server side
         "tax_ids": "CHE-4534800-TEST"
     }
 }
- `
+ ```
 
  - 5. | Method | Description | Endpoints      |
       | ------ | ----------- | -------------- |
@@ -110,7 +110,7 @@ To run tests for the server side
   - Input `http://localhost:9000/api/v1/invoice/1`
 
  - Output
- `{
+ ```{
     "status": 200,
     "message": "Invoice generated successfully",
     "data": {
@@ -124,4 +124,4 @@ To run tests for the server side
         "net_amount": 92.3
     }
 }
- `
+ ```
