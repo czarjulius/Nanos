@@ -3,6 +3,13 @@
 # Nanos
 Nanos is based in Switzerland, and is hence required by laws to charge an additional VAT on the total price for any client from Switzerland - irrespective of what the client’s nationality is.
 
+### Technologies
+- NodeJS (Framework)
+- Express (Libry)
+- Mocha (unit test)
+- Chai (unit test)
+- Pg (Database)
+
 ### Installing
 - Install Node js
 - Clone the repository `https://github.com/czarjulius/Nanos.git`
