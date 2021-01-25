@@ -19,9 +19,9 @@ To run tests for the server side
 
 # API Endpoints
 
-| Method | Description | Endpoints      |
- | ------ | ----------- | -------------- |
- | GET |Get a single client by Id| /api/v1/client/:client_id|
+- 1. | Method | Description | Endpoints      |
+     | ------ | ----------- | -------------- |
+     | GET |Get a single client by Id| /api/v1/client/:client_id|
 
 - Input `http://localhost:9000/api/v1/client/1`
 
@@ -39,14 +39,14 @@ To run tests for the server side
     }
 }
 `
-| Method | Description | Endpoints      |
- | ------ | ----------- | -------------- |
- | GET |Get a single campaign by Id |  /api/v1/campaign/:campaign_id|
+- 2. | Method | Description | Endpoints      |
+     | ------ | ----------- | -------------- |
+     | GET |Get a single campaign by Id |  /api/v1/campaign/:campaign_id|
 
  - Input `http://localhost:9000/api/v1/campaign/1`
-`
+
 - Output
-{
+`{
     "status": 200,
     "message": "Campaign fetched successfully",
     "data": {
@@ -55,14 +55,12 @@ To run tests for the server side
     }
 }
 `
-| Method | Description | Endpoints      |
- | ------ | ----------- | -------------- |
- | GET |Fetch all the campaigns in the database | /api/v1/campaigns|
-
- `
+- 3. | Method | Description | Endpoints      |
+     | ------ | ----------- | -------------- |
+     | GET |Fetch all the campaigns in the database | /api/v1/campaigns|
 
  - Output
- {
+ `{
     "status": 200,
     "message": "Campaign fetched successfully",
     "data": [
@@ -77,16 +75,14 @@ To run tests for the server side
 }
  `
 
- | Method | Description | Endpoints      |
- | ------ | ----------- | -------------- |
- | PATCH |Update customer object on stripe| /api/v1/add_vat/:campaign_id|
+ - 4. | Method | Description | Endpoints      |
+      | ------ | ----------- | -------------- |
+      | PATCH |Update customer object on stripe| /api/v1/add_vat/:campaign_id|
 
- `
   - Input `http://localhost:9000/api/v1/add_vat/1`
 
-
  - Output
- {
+ `{
     "status": 200,
     "message": "Customer VAT updated successfully",
     "data": {
@@ -107,16 +103,14 @@ To run tests for the server side
 }
  `
 
- | Method | Description | Endpoints      |
- | ------ | ----------- | -------------- |
- | GET |Generate invoice from all APIs| /api/v1/add_vat/:campaign_id|
+ - 5. | Method | Description | Endpoints      |
+      | ------ | ----------- | -------------- |
+      | GET |Generate invoice from all APIs| /api/v1/add_vat/:campaign_id|
 
- `
   - Input `http://localhost:9000/api/v1/invoice/1`
 
-
  - Output
- {
+ `{
     "status": 200,
     "message": "Invoice generated successfully",
     "data": {
